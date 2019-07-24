@@ -49,8 +49,8 @@ npm install -g yo generator-code
 插件配置都写在 `package.json` 中，详细配置查看 [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest) 或 [VSCode插件开发全攻略 - package.json 详解](https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html)
 
 ### 入口文件
-\
-此文件抛出了两个函数 `activate`、 `deactivate`，都会被自动调用，名字应该是不能改的，且 activate 是必须的，deactivate 非必须.
+
+此文件抛出了两个函数 `activate`、 `deactivate`，都会被自动调用，**名字是不能改的**，且 activate 是必须的，deactivate 非必须.
 
 ```js
 import * as vscode from 'vscode';
