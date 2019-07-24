@@ -18,7 +18,15 @@
 - [Advanced Topics](https://code.visualstudio.com/api/advanced-topics/extension-host) 高级部分
 - [References](https://code.visualstudio.com/api/references/vscode-api) 其他啦
 
+## 目录
+
+- [新手引导](./get-started.md)
+
 ## 参考文献
 
 - [官方文档](https://code.visualstudio.com/api)
 - [VSCode插件开发全攻略 - 小茗同学](https://www.cnblogs.com/liuxianan/p/vscode-plugin-overview.html)
+- [打包扩展](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
+- [发布扩展](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+- [清单文件配置](https://code.visualstudio.com/api/references/extension-manifest)
+- [vscode-extension-samples 示例](https://github.com/Microsoft/vscode-extension-samples)
