@@ -10,10 +10,10 @@
 
 > How to build extensions?
 
-- [Get Started](https://code.visualstudio.com/api/get-started/your-first-extension) 基础API及介绍
+- [Get Started](https://code.visualstudio.com/api/get-started/your-first-extension) 基础 API 及介绍
 - [Working with Extensions](https://code.visualstudio.com/api/working-with-extensions/testing-extension) 发布与测试插件
 - [Extension Capabilities](https://code.visualstudio.com/api/extension-capabilities/overview) 插件功能细节
-- [Extension Guides](https://code.visualstudio.com/api/extension-guides/overview) API详细介绍
+- [Extension Guides](https://code.visualstudio.com/api/extension-guides/overview) API 详细介绍
 - [Language Extensions](https://code.visualstudio.com/api/language-extensions/overview) 扩展语言支持
 - [Advanced Topics](https://code.visualstudio.com/api/advanced-topics/extension-host) 高级部分
 - [References](https://code.visualstudio.com/api/references/vscode-api) 其他啦
@@ -25,7 +25,7 @@
 ## 参考文献
 
 - [官方文档](https://code.visualstudio.com/api)
-- [VSCode插件开发全攻略 - 小茗同学](https://www.cnblogs.com/liuxianan/p/vscode-plugin-overview.html)
+- [VSCode 插件开发全攻略 - 小茗同学](https://www.cnblogs.com/liuxianan/p/vscode-plugin-overview.html)
 - [打包扩展](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 - [发布扩展](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
 - [清单文件配置](https://code.visualstudio.com/api/references/extension-manifest)

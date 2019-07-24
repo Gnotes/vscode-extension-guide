@@ -4,6 +4,8 @@
 
 ```bash
 npm install -g yo generator-code
+
+yo code
 ```
 
 ### 项目结构
@@ -25,7 +27,7 @@ npm install -g yo generator-code
 
 ### 运行插件
 
-键入 ***F5*** 会编译项目并打开新的 `开发模式` 窗口，通过命令面板 **`Cmd + Shift + P`** ，搜索 `hello world` 命令并执行.
+键入 **_F5_** 会编译项目并打开新的 `开发模式` 窗口，通过命令面板 **`Cmd + Shift + P`** ，搜索 `hello world` 命令并执行.
 
 ### 编辑插件
 
@@ -38,15 +40,15 @@ npm install -g yo generator-code
 ### 重要概念 ⚠️
 
 - [Activation Events](https://code.visualstudio.com/api/references/activation-events) ( eg. `onCommand`)
-    > 激活事件，用于 **匹配** 用户或编辑器的操作，并触发对应处理函数或操作
+  > 激活事件，用于 **匹配** 用户或编辑器的操作，并触发对应处理函数或操作
 - [Contribution Points](https://code.visualstudio.com/api/references/contribution-points) ( eg. `contributes.commands`)
-    > 在 `package.json` 中 **声明** 命令插件提供的功能(贡献)
+  > 在 `package.json` 中 **声明** 命令插件提供的功能(贡献)
 - [VS Code API](https://code.visualstudio.com/api/references/vscode-api) ( eg. `commands.registerCommand`)
-    > 底层 JS-API
+  > 底层 JS-API
 
 ### 清单文件
 
-插件配置都写在 `package.json` 中，详细配置查看 [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest) 或 [VSCode插件开发全攻略 - package.json 详解](https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html)
+插件配置都写在 `package.json` 中，详细配置查看 [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest) 或 [VSCode 插件开发全攻略 - package.json 详解](https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html)
 
 ### 入口文件
 
@@ -57,12 +59,12 @@ import * as vscode from 'vscode';
 
 // 插件激活时调用，默认是没有激活的
 export function activate(context: vscode.ExtensionContext) {
-    // 调用 VS Code API 注册事件(Activation Events)监听函数
-    let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
-        vscode.window.showInformationMessage('Hello World!');
-    });
+  // 调用 VS Code API 注册事件(Activation Events)监听函数
+  let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
+    vscode.window.showInformationMessage('Hello World!');
+  });
 
-    context.subscriptions.push(disposable);
+  context.subscriptions.push(disposable);
 }
 
 // 插件进入“停用?”状态前自动执行的函数
