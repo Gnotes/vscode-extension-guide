@@ -38,7 +38,7 @@ npm install -g yo generator-code
 ### 重要概念 ⚠️
 
 - [Activation Events](https://code.visualstudio.com/api/references/activation-events) ( eg. `onCommand`)
-    > 激活事件，用于 **匹配** 用户或编辑的操作，并触发对应处理函数或操作
+    > 激活事件，用于 **匹配** 用户或编辑器的操作，并触发对应处理函数或操作
 - [Contribution Points](https://code.visualstudio.com/api/references/contribution-points) ( eg. `contributes.commands`)
     > 在 `package.json` 中 **声明** 命令插件提供的功能(贡献)
 - [VS Code API](https://code.visualstudio.com/api/references/vscode-api) ( eg. `commands.registerCommand`)
@@ -49,8 +49,8 @@ npm install -g yo generator-code
 插件配置都写在 `package.json` 中，详细配置查看 [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest) 或 [VSCode插件开发全攻略 - package.json 详解](https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html)
 
 ### 入口文件
-
-此文件抛出了两个函数 `activate`、 `deactivate`，都会被自动调用，名字应该是不能改的。
+\
+此文件抛出了两个函数 `activate`、 `deactivate`，都会被自动调用，名字应该是不能改的，且 activate 是必须的，deactivate 非必须.
 
 ```js
 import * as vscode from 'vscode';
